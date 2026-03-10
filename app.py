@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load the preprocessor and model
-preprocessor = joblib.load("artifacts/preprocessor.pkl")
-model = joblib.load("artifacts/model.pkl")
+preprocessor = joblib.load("preprocessor.pkl")
+model = joblib.load("model.pkl")
 
 def main():
     st.title('Heart Attack Prediction Model Deployment')
@@ -41,3 +41,4 @@ def make_prediction(features):
 
 if __name__ == '__main__':
     main()
+
